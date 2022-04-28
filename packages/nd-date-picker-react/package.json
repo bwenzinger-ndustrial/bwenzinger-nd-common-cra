@@ -17,7 +17,7 @@
     "@ndustrial/nd-menu-button-react": "^0.1.0",
     "@reach/rect": "^0.10.4",
     "react-dates": "21.8.0",
-    "@types/react-dates": "21.8.0",
+    "@types/react-dates": "21.8.3",
     "react-moment-proptypes": "^1.7.0",
     "react-portal": "^4.2.1",
     "@types/react-portal": "^4.0.4",
