@@ -3,7 +3,7 @@ import styled, { css } from 'styled-components';
 import {
   animations,
   themeHelper,
-  defaultTheme
+  defaultTheme,
 } from '@ndustrial/nd-theme-react';
 import { Close } from '@ndustrial/nd-icons-svg';
 import { NdAsideProps } from './types';
@@ -82,7 +82,7 @@ const AsideGroup = styled.div`
 
 class AsideComponent extends Component<NdAsideProps> {
   state = {
-    isDismissed: false
+    isDismissed: false,
   };
 
   handleDismiss = () => {
@@ -103,6 +103,7 @@ class AsideComponent extends Component<NdAsideProps> {
         type={type}
       >
         <AsideIcon>
+          {/* @ts-ignore next-line */}
           {icon({ stroke: defaultTheme.colors[type], height: 20, width: 20 })}
         </AsideIcon>
         <TextContainer>

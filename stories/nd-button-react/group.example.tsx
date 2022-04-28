@@ -4,10 +4,9 @@ import { ThemeProvider } from 'styled-components';
 import { defaultTheme } from '@ndustrial/nd-theme-react';
 import {
   ButtonGroup,
-  DangerButton,
-  GhostButton,
+  WarningButton,
   PrimaryButton,
-  SecondaryButton
+  SecondaryButton,
 } from '@ndustrial/nd-button-react';
 
 export let GroupOfButtonExample = () => (
@@ -15,10 +14,10 @@ export let GroupOfButtonExample = () => (
     <ButtonGroup>
       <PrimaryButton>The</PrimaryButton>
       <SecondaryButton>{`<ButtonGroup />`}</SecondaryButton>
-      <GhostButton>Component</GhostButton>
-      <DangerButton>Handles</DangerButton>
-      <PrimaryButton>Button</PrimaryButton>
-      <SecondaryButton>Wrapping</SecondaryButton>
+      <WarningButton>Component</WarningButton>
+      <PrimaryButton>Handles</PrimaryButton>
+      <SecondaryButton>Button</SecondaryButton>
+      <WarningButton>Wrapping</WarningButton>
     </ButtonGroup>
   </ThemeProvider>
 );

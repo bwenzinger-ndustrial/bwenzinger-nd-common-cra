@@ -5,7 +5,7 @@ import {
   Button,
   Menu,
   MenuItem,
-  Wrapper
+  Wrapper,
 } from '@ndustrial/nd-menu-button-react';
 import { defaultTheme } from '@ndustrial/nd-theme-react';
 

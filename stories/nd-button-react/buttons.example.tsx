@@ -4,10 +4,9 @@ import styled, { ThemeProvider } from 'styled-components';
 import { defaultTheme } from '@ndustrial/nd-theme-react';
 import {
   ButtonGroup,
-  DangerButton,
-  GhostButton,
+  WarningButton,
   PrimaryButton,
-  SecondaryButton
+  SecondaryButton,
 } from '@ndustrial/nd-button-react';
 import { Star as StarIcon } from '@ndustrial/nd-icons-svg';
 
@@ -64,42 +63,22 @@ export let ButtonsExample = () => (
       </Spacer>
 
       <Spacer>
-        <GroupDescription>Ghost</GroupDescription>
+        <GroupDescription>Warning</GroupDescription>
         <ButtonGroup>
-          <GhostButton>Button</GhostButton>
-          <GhostButton icon={<StarIcon />}>Button</GhostButton>
-          <GhostButton icon={<StarIcon />} />
+          <WarningButton>Button</WarningButton>
+          <WarningButton icon={<StarIcon />}>Button</WarningButton>
+          <WarningButton icon={<StarIcon />} />
         </ButtonGroup>
       </Spacer>
 
       <Spacer>
-        <GroupDescription>Ghost (Disabled)</GroupDescription>
+        <GroupDescription>Warning (Disabled)</GroupDescription>
         <ButtonGroup>
-          <GhostButton disabled>Button</GhostButton>
-          <GhostButton disabled icon={<StarIcon />}>
+          <WarningButton disabled>Button</WarningButton>
+          <WarningButton disabled icon={<StarIcon />}>
             Button
-          </GhostButton>
-          <GhostButton disabled icon={<StarIcon />} />
-        </ButtonGroup>
-      </Spacer>
-
-      <Spacer>
-        <GroupDescription>Danger</GroupDescription>
-        <ButtonGroup>
-          <DangerButton>Button</DangerButton>
-          <DangerButton icon={<StarIcon />}>Button</DangerButton>
-          <DangerButton icon={<StarIcon />} />
-        </ButtonGroup>
-      </Spacer>
-
-      <Spacer>
-        <GroupDescription>Danger (Disabled)</GroupDescription>
-        <ButtonGroup>
-          <DangerButton disabled>Button</DangerButton>
-          <DangerButton disabled icon={<StarIcon />}>
-            Button
-          </DangerButton>
-          <DangerButton disabled icon={<StarIcon />} />
+          </WarningButton>
+          <WarningButton disabled icon={<StarIcon />} />
         </ButtonGroup>
       </Spacer>
     </React.Fragment>

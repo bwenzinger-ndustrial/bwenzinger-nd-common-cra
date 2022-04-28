@@ -72,8 +72,8 @@ interface UserDropdownButtonProps {
 function Button({
   avatarSrc = '',
   className = '',
-  isOpen,
-  userName = ''
+  isOpen = false,
+  userName = '',
 }: UserDropdownButtonProps) {
   return (
     <Container className={className} tag="div">

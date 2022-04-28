@@ -3,18 +3,17 @@ import { ThemeProvider } from 'styled-components';
 
 import { defaultTheme } from '@ndustrial/nd-theme-react';
 import {
-  DangerButton,
-  GhostButton,
+  WarningButton,
   PrimaryButton,
-  SecondaryButton
+  SecondaryButton,
 } from '@ndustrial/nd-button-react';
 import { Info as InfoIcon } from '@ndustrial/nd-icons-svg';
 
-export const buttonVariations = ['primary', 'secondary', 'ghost', 'danger'];
+export const buttonVariations = ['primary', 'secondary', 'warning'];
 
 interface Props {
   text: string;
-  variation: 'primary' | 'secondary' | 'ghost' | 'danger';
+  variation: 'primary' | 'secondary' | 'warning';
   withIcon: boolean;
 }
 
@@ -33,17 +32,11 @@ const Button = ({ text, variation = 'primary', withIcon, ...rest }: Props) => {
           {text}
         </SecondaryButton>
       );
-    case 'ghost':
+    case 'warning':
       return (
-        <GhostButton icon={icon} {...rest}>
+        <WarningButton icon={icon} {...rest}>
           {text}
-        </GhostButton>
-      );
-    case 'danger':
-      return (
-        <DangerButton icon={icon} {...rest}>
-          {text}
-        </DangerButton>
+        </WarningButton>
       );
   }
 };
