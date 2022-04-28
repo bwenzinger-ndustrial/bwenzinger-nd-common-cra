@@ -13,7 +13,7 @@
     "package": "rm -rf dist && NODE_ENV=production babel --config-file ../../babel.config.js --extensions '.ts,.tsx,.js' src --out-dir dist --source-maps"
   },
   "dependencies": {
-    "@reach/tabs": "^0.1.5",
+    "@reach/tabs": "^0.17.0",
     "@types/reach__tabs": "^0.1.1",
     "styled-components": ">=5.1.0"
   },
