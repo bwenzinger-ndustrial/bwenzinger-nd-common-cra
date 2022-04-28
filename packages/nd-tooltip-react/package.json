@@ -13,10 +13,10 @@
     "package": "rm -rf dist && NODE_ENV=production babel --config-file ../../babel.config.js --extensions '.ts,.tsx,.js' src --out-dir dist --source-maps"
   },
   "dependencies": {
-    "@tippy.js/react": "^3.1.1"
+    "@tippy.js/react": "^3.1.1",
+    "styled-components": ">=5.1.0"
   },
   "peerDependencies": {
-    "styled-components": "5.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

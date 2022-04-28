@@ -13,12 +13,12 @@
     "package": "rm -rf dist && NODE_ENV=production babel --config-file ../../babel.config.js --extensions '.ts,.tsx,.js' src --out-dir dist --source-maps"
   },
   "dependencies": {
-    "polished": "^3.4.1"
+    "polished": "^3.4.1",
+    "styled-components": ">=5.1.0"
   },
   "peerDependencies": {
     "react": "^16.9.0",
-    "react-dom": "^16.9.0",
-    "styled-components": "5.0.0"
+    "react-dom": "^16.9.0"
   }
 }
 
