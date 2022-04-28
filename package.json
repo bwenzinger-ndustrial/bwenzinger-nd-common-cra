@@ -52,7 +52,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^4.3.0",
     "eslint-plugin-storybook": "^0.5.7",
-    "faker": "^4.1.0",
+    "faker": "^6.6.6",
     "html-loader": "^3.0.1",
     "husky": "^7.0.4",
     "lerna": "^4.0.0",
